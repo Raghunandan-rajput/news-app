@@ -10,7 +10,7 @@ function Card({ news }) {
       <div className="card col-md-4 col-lg-4  main-card ">
         <a href={news.url} target="_blank">
           <img
-            src={news.urlToImage}
+            src={news.image}
             className="card-img-top news-img"
             alt="..."
           />
