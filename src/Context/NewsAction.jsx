@@ -1,6 +1,6 @@
 export const getNews = async (topic) => {
   const res = await fetch(
-    `https://newsapi.org/v2/everything?q=${topic}&from=2023-03-02&sortBy=publishedAt&apiKey=ab3832db4ed94e31a60f514e9c5c4392`
+    `https://gnews.io/api/v4/search?q=${topic}&lang=en&country=in&max=10&apikey=746c96dcfed07d1c1a116cf4e753412f`
   );
   const data = await res.json();
   return data.articles;
